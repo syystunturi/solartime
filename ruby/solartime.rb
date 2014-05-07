@@ -18,6 +18,14 @@ class Solartime
     Date.today.jd - Date.new(2000, 1, 1).jd
   end
 
+  def suns_right_ascension ye, xe
+    Math.atan2(ye, xe) * RAD_TO_DEG
+  end
+
+  def declination ze, xe, ye
+    Math.atan2( ze, Math.sqrt(xe**2 + ye**2) )
+  end
+
   def calculate_local_hour_angle h, declination, latitude
     h = h / RAD_TO_DEG
     declination = declination / RAD_TO_DEG
