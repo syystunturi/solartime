@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <title>Solartime by jarila</title>
+    <title>Solartime</title>
   </head>
 
   <body>
@@ -29,15 +29,45 @@
     <div class="container">
       <section id="main_content">
         <h3>
-<a name="solartime" class="anchor" href="#solartime"><span class="octicon octicon-link"></span></a>Solartime</h3>
+          <a name="solartime" class="anchor" href="#solartime"><span class="octicon octicon-link"></span></a>Fetching the source</h3>
 
-<p>Clone to your local computer with:</p>
+          <p>Clone to your local computer with:</p>
 
-<pre><code>$ git clone git@github.com:jarila/solartime.git
-</code></pre>
+          <pre><code>$ git clone git@github.com:jarila/solartime.git</code></pre>
+
+        <h3>Running the program from command line</h3>
+
+          <p>Enter the city and a <a href="http://qthlocator.free.fr/">Maidenhead locator square</a> within the command line parameters:</p>
+
+          <pre><code>$ ruby ruby/location.rb Helsinki KP20LE
+Helsinki (KP20LE)</code></pre>
+
+        <h3>Running the web server</h3>
+
+          <p>Run the webserver like this:</p>
+
+          <pre><code>$ ruby ruby/webserver.rb
+== Sinatra/1.4.5 has taken the stage on 4567 for development with backup from Thin
+Thin web server (v1.6.2 codename Doc Brown)
+Maximum connections set to 1024
+Listening on localhost:4567, CTRL+C to stop
+127.0.0.1 - - [07/May/2014 17:32:27] "GET / HTTP/1.1" 200 25 0.0057
+127.0.0.1 - - [07/May/2014 17:32:27] "GET /favicon.ico HTTP/1.1" 404 448 0.0008
+127.0.0.1 - - [07/May/2014 17:32:28] "GET / HTTP/1.1" 200 25 0.0013</code></pre>
+
+          <p>The web server is accessible at <a href="http://localhost:4567">the localhost</a> after that.</p>
+
+          <p>And stop it with ctrl+c:</p>
+
+          <pre><code>^CStopping ...
+Stopping ...
+== Sinatra has ended his set (crowd applauds)</code></pre>
+
+        <h3>The algorithms used in this project</h3>
+
+          <p>If You're interested about the calculations, cf. Paul Schlyter: <a href="http://www.stjarnhimlen.se/comp/ppcomp.html">How to compute planetary positions</a>.</p>
       </section>
     </div>
 
-    
   </body>
 </html>
