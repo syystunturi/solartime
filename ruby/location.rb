@@ -1,4 +1,6 @@
+#!/usr/bin/env ruby
 # encoding: utf-8
+
 require_relative 'solartime'
 
 city, location = ARGV
@@ -11,4 +13,4 @@ end
 
 solartime = Solartime.new
 
-solartime.print_location city, location
+solartime.command_line_solartime city, location

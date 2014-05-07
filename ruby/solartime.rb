@@ -7,7 +7,7 @@ class Solartime
   CIVIL_TWILIGHT = -6
   RAD_TO_DEG = 180 / Math::PI
 
-  def print_location city, location
+  def command_line_solartime city, location
     location_label = "%s (%s)"
     puts location_label % [city, location]
   end
