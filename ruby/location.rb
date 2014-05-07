@@ -1,6 +1,7 @@
-city, location = ARGV
+# encoding: utf-8
+require_relative 'solartime'
 
-location_label = "%s (%s)"
+city, location = ARGV
 
 if location == nil
   city, location = "Helsinki", "KP20LE"
@@ -8,4 +9,6 @@ elsif /[A-Z][A-Z][0-9][0-9][A-Z][A-Z]/.match(city)
   city, location = location, city
 end
 
-puts location_label % [city, location]
+solartime = Solartime.new
+
+solartime.print_location city, location
