@@ -1,15 +1,25 @@
 # encoding: utf-8
+require_relative 'maidenhead'
 require 'date'
 
 class Solartime
+
+  include Maidenhead
 
   SUN_TOUCHING_HORIZON = -0.833
   CIVIL_TWILIGHT = -6
   RAD_TO_DEG = 180 / Math::PI
 
   def command_line_solartime city, location
-    location_label = "%s (%s)"
-    puts location_label % [city, location]
+    if location.length != 6
+      city, location = "München", "JN58SD"
+    elsif !/[A-Ra-r][A-Ra-r][0-9][0-9][A-Xa-x][A-Xa-x]/.match(location)
+      city, location = "Berlin", "JO62QM"
+    end
+
+    longitude, latitude = locator_to_coordinates( location )
+    location_label = "%s (%s: %.3f %.3f)"
+    puts location_label % [city, location, longitude, latitude]
   end
 
   private

@@ -1,6 +1,5 @@
 require 'sinatra'
 
-get '/' do
   header = "<html>
 <head>
 <title>Solartime</title>
@@ -14,5 +13,6 @@ get '/' do
 </body>
 </html>"
 
-  header + (erb code) + footer
-end
+  get '/' do
+    header + (erb code) + footer
+  end
