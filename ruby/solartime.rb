@@ -22,6 +22,10 @@ class Solartime
     puts location_label % [city, location, longitude, latitude]
   end
 
+  def web_server_solartime city, location
+    locator_to_coordinates( location )
+  end
+
   private
 
   def day_number
