@@ -2,22 +2,29 @@ require 'sinatra'
 require_relative 'solartime'
 
   solartime = Solartime.new
-  header = "<html>
+  header = '<html>
 <head>
+<link rel="stylesheet" href="solartime.css" type="text/css" />
 <title>Solartime</title>
 </head>
 <body>
-<h2>Solartime</h2>"
+<h2>Solartime</h2>'
 
   maidenhead = '<form name="input" action="/" method="post">
 City: <input type="text" name="city" value="Helsinki"><br>
 Locator: <input type="text" name="location" value="KP20LE"><br>
-<input type="submit" value="Submit">
+<input type="submit" value="Calculate">
 </form>'
 
   footer = "<p><%= Time.now %></p>
 </body>
 </html>"
+
+  get '/solartime.css' do
+    "body { font-family: sans-serif }
+h2 { background-color: #d6eaff; border: 2px solid; color: #3399ff }
+p { color: #3399ff }"
+  end
 
   get '/' do
     sunrise_sunset_result = "#{maidenhead}"
