@@ -1,5 +1,5 @@
 task :rspecs do
-  sh "rspec ruby/spec/maidenhead_spec.rb"
+  sh "rspec ruby"
   puts "RSpec tests have been run."
 end
 
