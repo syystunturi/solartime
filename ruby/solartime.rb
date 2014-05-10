@@ -57,4 +57,17 @@ class Solartime
     Math.acos(local_hour_angle) * RAD_TO_DEG
   end
 
+  def normalize_angle angle
+    if angle > 360
+      while angle > 360 do
+        angle -= 360
+      end
+    elsif angle < 0
+      while angle < 0
+        angle += 360
+      end
+    end
+    angle
+  end
+
 end
