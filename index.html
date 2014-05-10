@@ -35,6 +35,42 @@
 
           <pre><code>$ git clone git@github.com:jarila/solartime.git</code></pre>
 
+          <p>Run bundle install:</p>
+
+          <pre><code>$ bundle install
+Using daemons (1.1.9)
+Using diff-lcs (1.2.5)
+Using eventmachine (1.0.3)
+Using rack (1.5.2)
+Using rack-protection (1.5.3)
+Using rspec-core (2.14.7)
+Using rspec-expectations (2.14.4)
+Using rspec-mocks (2.14.4)
+Using rspec (2.14.1)
+Using tilt (1.4.1)
+Using sinatra (1.4.5)
+Using thin (1.6.2)
+Using bundler (1.5.2)
+Your bundle is complete!
+Use `bundle show [gemname]` to see where a bundled gem is installed.</code></pre>
+
+          <p>Run the tests and start the web server by running rake:</p>
+
+          <pre><code>$ rake
+rspec ruby/spec/maidenhead_spec.rb
+.
+
+Finished in 0.00077 seconds
+1 example, 0 failures
+RSpec tests have been run.
+Tests have been run.
+Starting web server now. Exit with Ctrl + C.
+ruby ruby/webserver.rb
+== Sinatra/1.4.5 has taken the stage on 4567 for development with backup from Thin
+Thin web server (v1.6.2 codename Doc Brown)
+Maximum connections set to 1024
+Listening on localhost:4567, CTRL+C to stop</code></pre>
+
         <h3>Running the program from command line</h3>
 
           <p>Enter the city and a <a href="http://qthlocator.free.fr/">Maidenhead locator square</a> within the command line parameters:</p>
@@ -42,7 +78,7 @@
           <pre><code>$ ruby/location.rb München JN58SD
 München (JN58SD)</code></pre>
 
-        <h3>Running the web server</h3>
+        <h3>Running the web server only</h3>
 
           <p>Run the webserver like this:</p>
 
