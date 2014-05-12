@@ -32,6 +32,18 @@ class Solartime
     Date.today.jd - Date.new(2000, 1, 1).jd
   end
 
+  def orbital_elements_of_the_sun( d = nil )
+    d ||= day_number
+    n = 0.0
+    i = 0.0
+    w = 282.9404 + 0.0000470935 * d
+    a = 1.000000
+    e = 0.016709 - 0.000000001151 * d
+    m = 356.0470 + 0.9856002585 * d
+    m = normalize_angle m
+    return n, i, w, a, e, m
+  end
+
   def suns_right_ascension ye, xe
     Math.atan2(ye, xe) * RAD_TO_DEG
   end
