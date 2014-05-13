@@ -32,6 +32,11 @@ class Solartime
     Date.today.jd - Date.new(2000, 1, 1).jd
   end
 
+  def obliquity_of_the_ecliptic( d = nil )
+    d ||= day_number
+    23.4393 - 0.0000003563 * d
+  end
+
   def orbital_elements_of_the_sun( d = nil )
     d ||= day_number
     n = 0.0
