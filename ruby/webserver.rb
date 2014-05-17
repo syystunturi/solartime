@@ -2,18 +2,19 @@ require 'sinatra'
 require_relative 'solartime'
 
   solartime = Solartime.new
-  header = '<html>
+  header = '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-<link rel="stylesheet" href="solartime.css" type="text/css" />
+<link rel="stylesheet" href="solartime.css" type="text/css">
 <title>Solartime</title>
 </head>
 <body>
 <h2>Solartime</h2>'
 
   maidenhead = '<form name="input" action="/" method="post">
-City: <input type="text" name="city" value="Helsinki"><br>
-Locator: <input type="text" name="location" value="KP20LE"><br>
-<input type="submit" value="Calculate">
+<p>City: <input type="text" name="city" value="Helsinki"></p>
+<p>Locator: <input type="text" name="location" value="KP20LE"></p>
+<p><input type="submit" value="Calculate"></p>
 </form>'
 
   footer = "<p><%= Time.now %></p>
@@ -38,9 +39,9 @@ p { color: #3399ff }"
     @location = params[:location]
 
     sunrise_sunset_result = '<form name="input" action="/" method="post">
-City: <input type="text" name="city" value="<%= @city %>"><br>
-Locator: <input type="text" name="location" value="<%= @location %>"><br>
-<input type="submit" value="Calculate">
+<p>City: <input type="text" name="city" value="<%= @city %>"></p>
+<p>Locator: <input type="text" name="location" value="<%= @location %>"></p>
+<p><input type="submit" value="Calculate"></p>
 </form>'
 
     if @city != nil
@@ -64,10 +65,10 @@ Locator: <input type="text" name="location" value="<%= @location %>"><br>
       latitude_minutes = 60 * (latitude.abs - latitude_full)
 
       sunrise_sunset_result += "<h2><%= @city %> (<%= @location %>)</h2>
-<ul>
+<div><ul>
   <li>Longitude: #{west_or_east} #{longitude_full}&deg; #{"%.3f" % longitude_minutes}</li>
   <li>Latitude: #{south_or_north} #{latitude_full}&deg; #{"%.3f" % latitude_minutes}</li>
-</ul>"
+</ul></div>"
     end
 
     header + (erb sunrise_sunset_result) + (erb footer)
