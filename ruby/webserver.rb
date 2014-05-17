@@ -6,10 +6,9 @@ require_relative 'solartime'
   header = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
 <html>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <title>Solartime</title>
-<meta http-equiv="default-style" content="solartime" />
-<link rel="stylesheet" title="solartime" type="text/css" href="solartime.css" />
+<link rel="stylesheet" href="/solartime.css" type="text/css" media="screen" />
 </head>
 <body>
 <h2>Solartime</h2>
@@ -26,7 +25,7 @@ Locator: <input type="text" name="location" value="KP20LE" /><br/>
 </body>
 </html>'
 
-  get 'solartime.css' do
+  get '/solartime.css' do
     "body { font-family: sans-serif }
 h2 { background-color: #d6eaff; border: 2px solid; color: #3399ff }
 p { color: #3399ff }"
