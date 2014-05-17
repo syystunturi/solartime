@@ -19,9 +19,9 @@ require_relative 'solartime'
 <p><input type="submit" value="Calculate"></p>
 </form>'
 
-  footer = "<p><%= DateTime.now.in_time_zone("Helsinki") %></p>
+  footer = '<p><%= DateTime.now.in_time_zone("Helsinki") %></p>
 </body>
-</html>"
+</html>'
 
   get '/solartime.css' do
     "body { font-family: sans-serif }
