@@ -3,27 +3,30 @@ require 'active_support/time'
 require_relative 'solartime'
 
   solartime = Solartime.new
-  header = '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+  header = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
 <html>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <title>Solartime</title>
-<link rel="stylesheet" type="text/css" href="solartime.css" >
+<meta http-equiv="default-style" content="solartime" />
+<link rel="stylesheet" title="solartime" type="text/css" href="solartime.css" />
 </head>
 <body>
-<h2>Solartime</h2>'
+<h2>Solartime</h2>
+'
 
   maidenhead = '<form name="input" action="/" method="post">
-<p>City: <input type="text" name="city" value="Helsinki"></p>
-<p>Locator: <input type="text" name="location" value="KP20LE"></p>
-<p><input type="submit" value="Calculate"></p>
-</form>'
+<div>City: <input type="text" name="city" value="Helsinki" /><br/>
+Locator: <input type="text" name="location" value="KP20LE" /><br/>
+<input type="submit" value="Calculate" /></div>
+</form>
+'
 
   footer = '<p><%= DateTime.now.in_time_zone("Helsinki") %></p>
 </body>
 </html>'
 
-  get '/solartime.css' do
+  get 'solartime.css' do
     "body { font-family: sans-serif }
 h2 { background-color: #d6eaff; border: 2px solid; color: #3399ff }
 p { color: #3399ff }"
@@ -41,9 +44,9 @@ p { color: #3399ff }"
     @location = params[:location]
 
     sunrise_sunset_result = '<form name="input" action="/" method="post">
-<p>City: <input type="text" name="city" value="<%= @city %>"></p>
-<p>Locator: <input type="text" name="location" value="<%= @location %>"></p>
-<p><input type="submit" value="Calculate"></p>
+<div>City: <input type="text" name="city" value="<%= @city %>" /><br/>
+Locator: <input type="text" name="location" value="<%= @location %>" /><br/>
+<input type="submit" value="Calculate" /></div>
 </form>'
 
     if @city != nil
