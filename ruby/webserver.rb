@@ -1,11 +1,13 @@
 require 'sinatra'
+require 'active_support/time'
 require_relative 'solartime'
 
   solartime = Solartime.new
   header = '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<link rel="stylesheet" href="solartime.css" type="text/css">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="solartime.css">
 <title>Solartime</title>
 </head>
 <body>
@@ -17,7 +19,7 @@ require_relative 'solartime'
 <p><input type="submit" value="Calculate"></p>
 </form>'
 
-  footer = "<p><%= Time.now %></p>
+  footer = "<p><%= DateTime.now.in_time_zone("Helsinki") %></p>
 </body>
 </html>"
 
