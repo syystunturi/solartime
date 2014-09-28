@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B773A6FE19D841CA0001A4AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B773A6FD19D841CA0001A4AF /* AppDelegate.swift */; };
+		B773A70119D841CA0001A4AF /* Solartime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B773A6FF19D841CA0001A4AF /* Solartime.xcdatamodeld */; };
+		B773A70319D841CA0001A4AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B773A70219D841CA0001A4AF /* ViewController.swift */; };
+		B773A70619D841CA0001A4AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B773A70419D841CA0001A4AF /* Main.storyboard */; };
+		B773A70819D841CA0001A4AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B773A70719D841CA0001A4AF /* Images.xcassets */; };
+		B773A70B19D841CA0001A4AF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B773A70919D841CA0001A4AF /* LaunchScreen.xib */; };
+		B773A71719D841CA0001A4AF /* SolartimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B773A71619D841CA0001A4AF /* SolartimeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B773A71119D841CA0001A4AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B773A6F019D841C90001A4AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B773A6F719D841CA0001A4AF;
+			remoteInfo = Solartime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B773A6F819D841CA0001A4AF /* Solartime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solartime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B773A6FC19D841CA0001A4AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B773A6FD19D841CA0001A4AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B773A70019D841CA0001A4AF /* Solartime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Solartime.xcdatamodel; sourceTree = "<group>"; };
+		B773A70219D841CA0001A4AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B773A70519D841CA0001A4AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B773A70719D841CA0001A4AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B773A70A19D841CA0001A4AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B773A71019D841CA0001A4AF /* SolartimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolartimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B773A71519D841CA0001A4AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B773A71619D841CA0001A4AF /* SolartimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolartimeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B773A6F519D841CA0001A4AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B773A70D19D841CA0001A4AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B773A6EF19D841C90001A4AF = {
+			isa = PBXGroup;
+			children = (
+				B773A6FA19D841CA0001A4AF /* Solartime */,
+				B773A71319D841CA0001A4AF /* SolartimeTests */,
+				B773A6F919D841CA0001A4AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B773A6F919D841CA0001A4AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B773A6F819D841CA0001A4AF /* Solartime.app */,
+				B773A71019D841CA0001A4AF /* SolartimeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B773A6FA19D841CA0001A4AF /* Solartime */ = {
+			isa = PBXGroup;
+			children = (
+				B773A6FD19D841CA0001A4AF /* AppDelegate.swift */,
+				B773A70219D841CA0001A4AF /* ViewController.swift */,
+				B773A70419D841CA0001A4AF /* Main.storyboard */,
+				B773A70719D841CA0001A4AF /* Images.xcassets */,
+				B773A70919D841CA0001A4AF /* LaunchScreen.xib */,
+				B773A6FF19D841CA0001A4AF /* Solartime.xcdatamodeld */,
+				B773A6FB19D841CA0001A4AF /* Supporting Files */,
+			);
+			path = Solartime;
+			sourceTree = "<group>";
+		};
+		B773A6FB19D841CA0001A4AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B773A6FC19D841CA0001A4AF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B773A71319D841CA0001A4AF /* SolartimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B773A71619D841CA0001A4AF /* SolartimeTests.swift */,
+				B773A71419D841CA0001A4AF /* Supporting Files */,
+			);
+			path = SolartimeTests;
+			sourceTree = "<group>";
+		};
+		B773A71419D841CA0001A4AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B773A71519D841CA0001A4AF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B773A6F719D841CA0001A4AF /* Solartime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B773A71A19D841CA0001A4AF /* Build configuration list for PBXNativeTarget "Solartime" */;
+			buildPhases = (
+				B773A6F419D841CA0001A4AF /* Sources */,
+				B773A6F519D841CA0001A4AF /* Frameworks */,
+				B773A6F619D841CA0001A4AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Solartime;
+			productName = Solartime;
+			productReference = B773A6F819D841CA0001A4AF /* Solartime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B773A70F19D841CA0001A4AF /* SolartimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B773A71D19D841CA0001A4AF /* Build configuration list for PBXNativeTarget "SolartimeTests" */;
+			buildPhases = (
+				B773A70C19D841CA0001A4AF /* Sources */,
+				B773A70D19D841CA0001A4AF /* Frameworks */,
+				B773A70E19D841CA0001A4AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B773A71219D841CA0001A4AF /* PBXTargetDependency */,
+			);
+			name = SolartimeTests;
+			productName = SolartimeTests;
+			productReference = B773A71019D841CA0001A4AF /* SolartimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B773A6F019D841C90001A4AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Jari Lammi";
+				TargetAttributes = {
+					B773A6F719D841CA0001A4AF = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					B773A70F19D841CA0001A4AF = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = B773A6F719D841CA0001A4AF;
+					};
+				};
+			};
+			buildConfigurationList = B773A6F319D841C90001A4AF /* Build configuration list for PBXProject "Solartime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B773A6EF19D841C90001A4AF;
+			productRefGroup = B773A6F919D841CA0001A4AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B773A6F719D841CA0001A4AF /* Solartime */,
+				B773A70F19D841CA0001A4AF /* SolartimeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B773A6F619D841CA0001A4AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B773A70619D841CA0001A4AF /* Main.storyboard in Resources */,
+				B773A70B19D841CA0001A4AF /* LaunchScreen.xib in Resources */,
+				B773A70819D841CA0001A4AF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B773A70E19D841CA0001A4AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B773A6F419D841CA0001A4AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B773A70319D841CA0001A4AF /* ViewController.swift in Sources */,
+				B773A70119D841CA0001A4AF /* Solartime.xcdatamodeld in Sources */,
+				B773A6FE19D841CA0001A4AF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B773A70C19D841CA0001A4AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B773A71719D841CA0001A4AF /* SolartimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B773A71219D841CA0001A4AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B773A6F719D841CA0001A4AF /* Solartime */;
+			targetProxy = B773A71119D841CA0001A4AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B773A70419D841CA0001A4AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B773A70519D841CA0001A4AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B773A70919D841CA0001A4AF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B773A70A19D841CA0001A4AF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B773A71819D841CA0001A4AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B773A71919D841CA0001A4AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B773A71B19D841CA0001A4AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Solartime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B773A71C19D841CA0001A4AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Solartime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B773A71E19D841CA0001A4AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SolartimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Solartime.app/Solartime";
+			};
+			name = Debug;
+		};
+		B773A71F19D841CA0001A4AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SolartimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Solartime.app/Solartime";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B773A6F319D841C90001A4AF /* Build configuration list for PBXProject "Solartime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B773A71819D841CA0001A4AF /* Debug */,
+				B773A71919D841CA0001A4AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B773A71A19D841CA0001A4AF /* Build configuration list for PBXNativeTarget "Solartime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B773A71B19D841CA0001A4AF /* Debug */,
+				B773A71C19D841CA0001A4AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B773A71D19D841CA0001A4AF /* Build configuration list for PBXNativeTarget "SolartimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B773A71E19D841CA0001A4AF /* Debug */,
+				B773A71F19D841CA0001A4AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B773A6FF19D841CA0001A4AF /* Solartime.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B773A70019D841CA0001A4AF /* Solartime.xcdatamodel */,
+			);
+			currentVersion = B773A70019D841CA0001A4AF /* Solartime.xcdatamodel */;
+			path = Solartime.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B773A6F019D841C90001A4AF /* Project object */;
+}

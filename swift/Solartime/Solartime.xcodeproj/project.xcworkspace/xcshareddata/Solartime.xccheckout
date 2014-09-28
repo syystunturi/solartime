@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A944160E-4287-458E-8795-F32C27B5B4D9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Solartime</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A94FAE91F471798E669B5D8D0F215217D0DB10D5</key>
+		<string>github.com:jarila/solartime.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>swift/Solartime/Solartime.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A94FAE91F471798E669B5D8D0F215217D0DB10D5</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:jarila/solartime.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A94FAE91F471798E669B5D8D0F215217D0DB10D5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A94FAE91F471798E669B5D8D0F215217D0DB10D5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>solartime</string>
+		</dict>
+	</array>
+</dict>
+</plist>
