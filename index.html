@@ -35,41 +35,62 @@
 
           <pre><code>$ git clone git@github.com:syystunturi/solartime.git</code></pre>
 
-          <p>If you already haven't, install Ruby with <a href="https://rvm.io/">>rvm</a> and then install bundler with “sudo gem install bundler”.</p>
+          <p>If you already haven't, install Ruby with <a href="https://rvm.io/">rvm</a> and then install bundler with “sudo gem install bundler”.</p>
 
           <p>Then run bundle install:</p>
 
           <pre><code>$ bundle install
-Using daemons (1.1.9)
-Using diff-lcs (1.2.5)
-Using eventmachine (1.0.3)
-Using rack (1.5.2)
-Using rack-protection (1.5.3)
-Using rspec-core (2.14.7)
-Using rspec-expectations (2.14.4)
-Using rspec-mocks (2.14.4)
-Using rspec (2.14.1)
-Using tilt (1.4.1)
-Using sinatra (1.4.5)
-Using thin (1.6.2)
-Using bundler (1.5.2)
-Your bundle is complete!
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.8.4
+Using thread_safe 0.3.5
+Using daemons 1.2.3
+Using diff-lcs 1.2.5
+Using eventmachine 1.0.9.1
+Using rack 1.6.4
+Using rspec-support 3.4.1
+Using tilt 2.0.2
+Using bundler 1.11.2
+Using tzinfo 1.2.2
+Using rack-protection 1.5.3
+Using thin 1.6.4
+Using rspec-core 3.4.2
+Using rspec-expectations 3.4.0
+Using rspec-mocks 3.4.1
+Using activesupport 4.2.5.1
+Using sinatra 1.4.7
+Using rspec 3.4.0
+Bundle complete! 4 Gemfile dependencies, 20 gems now installed.
 Use `bundle show [gemname]` to see where a bundled gem is installed.</code></pre>
 
           <p>Run the tests and start the web server by running rake:</p>
 
           <pre><code>$ rake
-rspec ruby/spec/maidenhead_spec.rb
-.
+rspec ruby
+.DEPRECATION WARNING: `#capture(stream)` is deprecated and will be removed in the next release. (called from block (3 levels) in <top (required)> at /Users/solarflare/solartime/ruby/spec/solartime_spec.rb:13)
+..
 
-Finished in 0.00077 seconds
-1 example, 0 failures
+Deprecation Warnings:
+
+Using `should` from rspec-expectations' old `:should` syntax without explicitly enabling the syntax is deprecated. Use the new `:expect` syntax or explicitly enable `:should` with `config.expect_with(:rspec) { |c| c.syntax = :should }` instead. Called from /Users/solarflare/solartime/ruby/spec/maidenhead_spec.rb:10:in `block (3 levels) in <top (required)>'.
+
+
+If you need more of the backtrace for any of these deprecations to
+identify where to make the necessary changes, you can configure
+`config.raise_errors_for_deprecations!`, and it will turn the
+deprecation warnings into errors, giving you the full backtrace.
+
+1 deprecation warning total
+
+Finished in 0.00389 seconds (files took 0.24545 seconds to load)
+3 examples, 0 failures
+
 RSpec tests have been run.
 Tests have been run.
 Starting web server now. Exit with Ctrl + C.
 ruby ruby/webserver.rb
-== Sinatra/1.4.5 has taken the stage on 4567 for development with backup from Thin
-Thin web server (v1.6.2 codename Doc Brown)
+== Sinatra (v1.4.7) has taken the stage on 4567 for development with backup from Thin
+Thin web server (v1.6.4 codename Gob Bluth)
 Maximum connections set to 1024
 Listening on localhost:4567, CTRL+C to stop</code></pre>
 
@@ -84,14 +105,16 @@ München (JN58SD)</code></pre>
 
           <p>Run the webserver like this:</p>
 
-          <pre><code>$ ruby ruby/webserver.rb
-== Sinatra/1.4.5 has taken the stage on 4567 for development with backup from Thin
-Thin web server (v1.6.2 codename Doc Brown)
+          <pre><code>$ ruby ruby/webserver.rb 
+== Sinatra (v1.4.7) has taken the stage on 4567 for development with backup from Thin
+Thin web server (v1.6.4 codename Gob Bluth)
 Maximum connections set to 1024
 Listening on localhost:4567, CTRL+C to stop
-127.0.0.1 - - [07/May/2014 17:32:27] "GET / HTTP/1.1" 200 25 0.0057
-127.0.0.1 - - [07/May/2014 17:32:27] "GET /favicon.ico HTTP/1.1" 404 448 0.0008
-127.0.0.1 - - [07/May/2014 17:32:28] "GET / HTTP/1.1" 200 25 0.0013</code></pre>
+WARN: tilt autoloading 'tilt/erb' in a non thread-safe way; explicit require 'tilt/erb' suggested.
+127.0.0.1 - - [12/Feb/2016:17:37:12 +0200] "GET / HTTP/1.1" 200 614 0.0388
+127.0.0.1 - - [12/Feb/2016:17:37:12 +0200] "GET /solartime.css HTTP/1.1" 200 121 0.0015
+127.0.0.1 - - [12/Feb/2016:17:37:15 +0200] "POST / HTTP/1.1" 200 738 0.0024
+127.0.0.1 - - [12/Feb/2016:17:37:15 +0200] "GET /solartime.css HTTP/1.1" 200 121 0.0010</code></pre>
 
           <p>The web server is accessible at <a href="http://localhost:4567">the localhost</a> after that.</p>
 
