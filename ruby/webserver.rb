@@ -50,17 +50,17 @@ Locator: <input type="text" name="location" value="<%= @location %>" /><br/>
 
   longitude, latitude = solartime.web_server_solartime @city, @location unless @city.nil?
 
-  if longitude > 0
-    west_or_east = 'E'
-  else
-    west_or_east = 'W'
-  end
+  west_or_east = if longitude > 0
+                   'E'
+                 else
+                   'W'
+                 end
 
-  if latitude > 0
-    south_or_north = 'N'
-  else
-    south_or_north = 'S'
-  end
+  south_or_north = if latitude > 0
+                     'N'
+                   else
+                     'S'
+                   end
 
   longitude_full = longitude.to_i.abs
   longitude_minutes = 60 * (longitude.abs - longitude_full)
