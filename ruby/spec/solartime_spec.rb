@@ -3,14 +3,14 @@ require 'active_support/core_ext/kernel/reporting'
 require_relative '../solartime'
 
 describe Solartime do
-
   before(:all) do
     @solartime = Solartime.new
   end
 
   describe '.command_line_solartime' do
     it 'calculates the coordinates of Berlin correctly' do
-      expect { @solartime.command_line_solartime 'Berlin', 'JO62QM' }.to output("Berlin (JO62QM: 13.375 52.521)\n").to_stdout
+      expect { @solartime.command_line_solartime 'Berlin', 'JO62QM' }.to \
+        output("Berlin (JO62QM: 13.375 52.521)\n").to_stdout
     end
   end
 
@@ -21,5 +21,4 @@ describe Solartime do
       expect(b).to eq(48.145833333333336)
     end
   end
-
 end

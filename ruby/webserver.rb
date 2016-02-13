@@ -70,8 +70,8 @@ Locator: <input type="text" name="location" value="<%= @location %>" /><br/>
 
       sunrise_sunset_result += "<h2><%= @city %> (<%= @location %>)</h2>
 <div><ul>
-  <li>Longitude: #{west_or_east} #{longitude_full}&deg; #{"%.3f" % longitude_minutes}</li>
-  <li>Latitude: #{south_or_north} #{latitude_full}&deg; #{"%.3f" % latitude_minutes}</li>
+  <li>Longitude: #{west_or_east} #{longitude_full}&deg; #{'%.3f' % longitude_minutes}</li>
+  <li>Latitude: #{south_or_north} #{latitude_full}&deg; #{'%.3f' % latitude_minutes}</li>
 </ul></div>"
     end
 
