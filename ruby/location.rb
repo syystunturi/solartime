@@ -5,9 +5,10 @@ require_relative 'solartime'
 
 city, location = ARGV
 
-if location == nil
-  city, location = "Helsinki", "KP20LE"
-elsif /[A-Ra-r][A-Ra-r][0-9][0-9][A-Xa-x][A-Xa-x]/.match(city)
+if location.nil?
+  city = 'Helsinki'
+  location = 'KP20LE'
+elsif city =~ /[A-Ra-r][A-Ra-r][0-9][0-9][A-Xa-x][A-Xa-x]/
   city, location = location, city
 end
 

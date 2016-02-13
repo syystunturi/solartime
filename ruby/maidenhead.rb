@@ -1,8 +1,7 @@
 # encoding: utf-8
-
+# Calculates the coordinates from a locator
 module Maidenhead
-
-  def locator_to_coordinates locator
+  def locator_to_coordinates(locator)
     qth = locator.upcase.each_byte.to_a
 
     longitude = 20 * (qth[0] - 65) - 180
@@ -15,7 +14,6 @@ module Maidenhead
     latitude += 2.5 * (qth[5] - 65) / 60
     latitude += 1.25 / 60
 
-    return longitude, latitude
+    [longitude, latitude]
   end
-
 end
