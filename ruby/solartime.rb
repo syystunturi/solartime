@@ -67,24 +67,22 @@ class Solartime
                         Math.sin(declination)) /
                        (Math.cos(latitude) * Math.cos(declination))
 
-    if local_hour_angle < -1
-      local_hour_angle = -1
-    elsif local_hour_angle > 1
-      local_hour_angle = 1
-    end
+    local_hour_angle = normalize_lha(local_hour_angle)
 
     Math.acos(local_hour_angle) * RAD_TO_DEG
   end
 
+  def normalize_lha(local_hour_angle)
+    return -1 if local_hour_angle < -1
+    return 1 if local_hour_angle > 1
+    local_hour_angle
+  end
+
   def normalize_angle(angle)
     if angle > 360
-      while angle > 360 do
-        angle -= 360
-      end
+      angle -= 360 while angle > 360
     elsif angle < 0
-      while angle < 0
-        angle += 360
-      end
+      angle += 360 while angle < 0
     end
     angle
   end
